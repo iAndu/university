@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1507275133 source:f:\facultate\anul ii\tap\laborator\laborator 1\main.cpp
+	<iostream>
+	<string>
+	<stack>
+

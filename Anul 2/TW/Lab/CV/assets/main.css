@@ -1,0 +1,73 @@
+body {
+	font-size: 1rem;
+}
+
+section > p {
+	margin: 5px 0px;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-small {
+	font-size: 0.75rem;
+}
+
+.text-underline {
+	text-decoration: underline;
+}
+
+.form-group > * {
+	margin: 5px 0px;
+}
+
+h4.sub-heading {
+	font-weight: normal;
+}
+
+li li {
+	margin-bottom: 15px;
+}
+
+i.text-small {
+	font-size: 0.75rem;
+}
+
+i.fa-star {
+	color: #f2ee00;
+}
+
+.profile-pic {
+	height: 125px;
+}
+
+#about-me div {
+	display: inline-block;
+}
+
+.bullet::before {
+	content: "\2022";
+	margin: 0px 5px;
+}
+
+#top {
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+table, td, th {
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+#social-media * {
+    display: inline-block;
+}
+
+#social-media {
+    list-style: none;
+    padding: 0;
+}

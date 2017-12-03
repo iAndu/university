@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1482001033 source:d:\google drive\programare\asd\bleach\main.cpp
+	<fstream>
+	<queue>
+	<iostream>
+

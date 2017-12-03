@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>HTML: Introductory Lesson</title>
+        
+        <link rel="stylesheet" type="text/css" href="main.css">
+        
+        <meta charset="utf-8" />
+        <meta name="author" content="Wikipedia" />
+        <meta name="description" content="A short introductory lesson into HTML.">
+        <meta name="keywords" content="html,html5,xhtml,html4,programming,web,development,wiki,wikipedia,lesson" />
+    </head>
+    
+    <body>        
+        <nav>
+            <ol>
+                <li><a href="#about">About HTML</a></li>
+                <ol type="a">
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#similar-languages">Similar markup languages</a></li>
+                    <li><a href="#versions">HTML versions</a></li>
+                    <ol type="i">
+                        <li><a href="#xhtml">XHTML</a></li>
+                        <li><a href="#html4">HTML4</a></li>
+                        <li><a href="#html5">HTML5</a></li>
+                    </ol>
+                </ol>
+                
+                <li><a href="#tags">Tags</a></li>
+                <ol type="a">
+                    <li><a href="#sectioning">Sectioning tags</a></li>
+                    <li><a href="#grouping">Grouping tags</a></li>
+                    <li><a href="#semantics">Semantic tags</a></li>
+                </ol>
+                
+                <li><a href="#problems">Frequent HTML5 problems/confusions</a></li>
+                <li><a href="#dictionary">Dictionary</a></li>
+            </ol>
+        </nav>
+        
+        <div id="content">
+            <h1>HTML: Introductory lesson</h1>
+            
+            <section id="about">
+                <article>
+                    <h2>About HTML</h2>
+                    <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+                    <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Browsers do not display the HTML tags, but use them to interpret the content of the page.</p>
+                    <p>HTML can embed programs written in a scripting language such as JavaScript which affect the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), maintainer of both the HTML and the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.</p>
+                </article>
+                
+                <section id="history">
+                    <h3>History</h3>
+                    <p>In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system. Berners-Lee specified HTML and wrote the browser and server software in late 1990. That year, Berners-Lee and CERN data systems engineer Robert Cailliau collaborated on a joint request for funding, but the project was not formally adopted by CERN. In his personal notes from 1990 he listed "some of the many areas in which hypertext is used" and put an encyclopedia first.</p>
+                    <p>The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in late 1991. It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag, these were strongly influenced by SGMLguid, an in-house Standard Generalized Markup Language (SGML)-based documentation format at CERN. Eleven of these elements still exist in HTML 4.</p>
+                    <p>HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visual or audible web pages. Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of CSS. Many of the text elements are found in the 1988 ISO technical report TR 9537 Techniques for using SGML, which in turn covers the features of early text formatting languages such as that used by the RUNOFF command developed in the early 1960s for the CTSS (Compatible Time-Sharing System) operating system: these formatting commands were derived from the commands used by typesetters to manually format documents. However, the SGML concept of generalized markup is based on elements (nested annotated ranges with attributes) rather than merely print effects, with also the separation of structure and markup; HTML has been progressively moved in this direction with CSS.</p>
+                </section>
+                
+                <section id="similar-languages">
+                    <h3>Similar markup languages</h3>
+                    
+                    <article>
+                        <h4>GenCode</h4>
+                        <p>The first well-known public presentation of markup languages in computer text processing was made by William W. Tunnicliffe at a conference in 1967, although he preferred to call it generic coding. It can be seen as a response to the emergence of programs such as RUNOFF that each used their own control notations, often specific to the target typesetting device. In the 1970s, Tunnicliffe led the development of a standard called GenCode for the publishing industry and later was the first chair of the International Organization for Standardization committee that created SGML, the first standard descriptive markup language. Book designer Stanley Rice published speculation along similar lines in 1970. Brian Reid, in his 1980 dissertation at Carnegie Mellon University, developed the theory and a working implementation of descriptive markup in actual use.</p>
+                    </article>
+                    
+                    <article>
+                        <h4>troff and nroff</h4>
+                        <p>Some early examples of computer markup languages available outside the publishing industry can be found in typesetting tools on Unix systems such as troff and nroff. In these systems, formatting commands were inserted into the document text so that typesetting software could format the text according to the editor's specifications. It was a trial and error iterative process to get a document printed correctly. Availability of WYSIWYG ("what you see is what you get") publishing software supplanted much use of these languages among casual users, though serious publishing work still uses markup to specify the non-visual structure of texts, and WYSIWYG editors now usually save documents in a markup-language-based format.</p>
+                    </article>
+                    
+                    <article>
+                        <h4>TeX</h4>
+                        <p>Another major publishing standard is TeX, created and refined by Donald Knuth in the 1970s and '80s. TeX concentrated on detailed layout of text and font descriptions to typeset mathematical books. This required Knuth to spend considerable time investigating the art of typesetting. TeX is mainly used in academia, where it is a de facto standard in many scientific disciplines. A TeX macro package known as LaTeX provides a descriptive markup system on top of TeX, and is widely used.</p>
+                    </article>
+                </section>
+                
+                <section id="versions">
+                    <h3>HTML Versions</h3>
+                    
+                    <article id="xhtml">
+                        <h4>XHTML</h4>
+                        <p>Extensible Hypertext Markup Language (XHTML) is part of the family of XML markup languages. It mirrors or extends versions of the widely used Hypertext Markup Language (HTML), the language in which Web pages are formulated.</p>
+                        <p>While HTML, prior to HTML5, was defined as an application of Standard Generalized Markup Language (SGML), a flexible markup language framework, XHTML is an application of XML, a more restrictive subset of SGML. XHTML documents are well-formed and may therefore be parsed using standard XML parsers, unlike HTML, which requires a lenient HTML-specific parser.</p>
+                        <p>XHTML 1.0 became a World Wide Web Consortium (W3C) Recommendation on January 26, 2000. XHTML 1.1 became a W3C Recommendation on May 31, 2001. The standard known as XHTML5 is being developed as an XML adaptation of the HTML5 specification.</p>
+                    </article>
+                    
+                    <article id="html4">
+                        <h4>HTML4</h4>
+                        <p>Since its inception, HTML and its associated protocols gained acceptance relatively quickly. However, no clear standards existed in the early years of the language. Though its creators originally conceived of HTML as a semantic language devoid of presentation details, practical uses pushed many presentational elements and attributes into the language, driven largely by the various browser vendors. The latest standards surrounding HTML reflect efforts to overcome the sometimes chaotic development of the language and to create a rational foundation for building both meaningful and well-presented documents. To return HTML to its role as a semantic language, the W3C has developed style languages such as CSS and XSL to shoulder the burden of presentation. In conjunction, the HTML specification has slowly reined in the presentational elements.</p>
+                        <p>There are two axes differentiating various variations of HTML as currently specified: SGML-based HTML versus XML-based HTML (referred to as XHTML) on one axis, and strict versus transitional (loose) versus frameset on the other axis.</p>
+                    </article>
+                    
+                    <article id="html5">
+                        <h4>HTML5</h4>
+                        <p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard.</p>
+                        <p>It was published in October 2014 by the World Wide Web Consortium (W3C) to improve the language with support for the latest multimedia, while keeping it both easily readable by humans and consistently understood by computers and devices such as web browsers, parsers, etc. HTML5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2 HTML.</p>
+                        <p>HTML5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents, and introduces markup and application programming interfaces (APIs) for complex web applications. For the same reasons, HTML5 is also a candidate for cross-platform mobile applications, because it includes features designed with low-powered devices in mind.</p>
+                    </article>
+                </section>
+            </section>
+            
+            <section id="tags">
+                <article>
+                    <h2>Tags</h2>
+                    <p>HTML tags are the hidden keywords within a web page that define how your web browser must format and display the content.</p>
+                    <p>Most tags must have two parts, an opening and a closing part. For example, <html> is the opening tag and </html> is the closing tag. Note that the closing tag has the same text as the opening tag, but has an additional forward-slash ( / ) character. I tend to interperet this as the "end" or "close" character.</p>
+                    <p>There are some tags that are an exception to this rule, and where a closing tag is not required. The <img> tag for showing images is one example of this.</p>
+                    <p>Each HTML file must have the essential tags for it to be valid, so that web browsers can understand it and display it correctly.</p>
+                </article>
+                
+                <section id="sectioning">
+                    <h3>Sectioning tags</h3>
+                    <dl>
+                        <dt>body</dt>
+                        <dd><q>The body element represents the content of the document.</q></dd>
+                        <dt>article</dt>
+                        <dd><q>The article element represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</q></dd>
+                        <dt>section</dt>
+                        <dd><q>The section element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content. The theme of each section should be identified, typically by including a heading (h1-h6 element) as a child of the section element.</q></dd>
+                        <dt>aside</dt>
+                        <dd><q>The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.</q></dd>
+                        <dt>nav</dt>
+                        <dd><q>The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.</q></dd>
+                    </dl>
+                </section>
+                
+                <section id="grouping">
+                    <h3>Grouping tags</h3>
+                    <dl>
+                        <dt>p</dt>
+                        <dd><q>The p element represents a paragraph.</q></dd>
+                        <dt>ol</dt>
+                        <dd><q>The ol element represents a list of items, where the items have been intentionally ordered, such that changing the order would change the meaning of the document.</q></dd>
+                        <dt>ul</dt>
+                        <dd><q>The ul element represents a list of items, where the order of the items is not important — that is, where changing the order would not materially change the meaning of the document.</q></dd>
+                        <dt>dl</dt>
+                        <dd><q>The dl element represents an association list consisting of zero or more name-value groups (a description list). A name-value group consists of one or more names (dt elements) followed by one or more values (dd elements), ignoring any nodes other than dt and dd elements. Within a single dl element, there should not be more than one dt element for each name.</q></dd>
+                    </dl>
+                </section>
+                
+                <section id="semantics">
+                    <h3>Semantic tags</h3>
+                    <dl>
+                        <dt>strong</dt>
+                        <dd><q>The strong element represents strong importance, seriousness, or urgency for its contents.</q></dd>
+                        <dt>em</dt>
+                        <dd><q>The em element represents stress emphasis of its contents.</q></dd>
+                        <dt>time</dt>
+                        <dd><q>The time element represents its contents, along with a machine-readable form of those contents in the datetime attribute. The kind of content is limited to various kinds of dates, times, time-zone offsets, and durations.</q></dd>
+                        <dt>mark</dt>
+                        <dd><q>The mark element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context. When used in a quotation or other block of text referred to from the prose, it indicates a highlight that was not originally present but which has been added to bring the reader's attention to a part of the text that might not have been considered important by the original author when the block was originally written, but which is now under previously unexpected scrutiny. When used in the main prose of a document, it indicates a part of the document that has been highlighted due to its likely relevance to the user's current activity.</q></dd>
+                    </dl>
+                </section>
+            </section>
+            
+            <section id="problems">
+                <h2>Frequent HTML5 problems/confusions</h2>
+                
+                <article>
+                    <h3>Article vs Section</h3>
+                    <p>A section forms part of something else. An article is its own thing. But how does one know which is which? Mostly the real answer is "it depends on author intent".</p>
+                    <p>For example, one could imagine a book with a "Granny Smith" chapter that just said "These juicy, green apples make a great filling for apple pies."; that would be a section because there'd be lots of other chapters on (maybe) other kinds of apples.</p>
+                    <p>On the other hand, one could imagine a tweet or reddit comment or tumblr post or newspaper classified ad that just said "Granny Smith. These juicy, green apples make a great filling for apple pies."; it would then be articles because that was the whole thing.</p>
+                    <p>A comment on an article is not part of the article on which it is commenting, therefore it is its own article.</p>
+                </article>
+            </section>
+            
+            <section id="dictionary">
+                <h2>Dictionary</h2>
+                <dl>
+                    <dt><abbr title="HyperText Markup Langauge">HTML</abbr></dt>
+                    <dd>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.</dd>
+                    <dt><abbr title="HyperText Transfer Protocol">HTTP</abbr></dt>
+                    <dd>The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, and hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web.</dd>
+                </dl>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+div#contor {
+    border: 5px inset brown;
+    width: 200px;
+    height: 200px;
+    overflow:hidden;
+    position: relative;
+}
+
+div#linie {
+    width: 10px;
+    height: 150px;
+    background-color: pink;
+    position: absolute;
+    left: 70px;
+    transform: rotate(50deg);
+}

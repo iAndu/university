@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Star Shop</title>
+        <link type="text/css" rel="stylesheet" href="main.css"/>
+        <link type="text/css" rel="stylesheet" href="font-awesome.min.css"/>
+        <meta charset="utf-8"/>
+        <meta name="description" content="An eCommerce website, come and buy anything from smartphones, laptops to food and cars."/>
+        <meta name="author" content="Alexandru Banu"/>
+        <meta name="keywords" content="shop, shopping, online, eCommerce, gadgets, phone, smartphone, laptop, electronics, car, TV"/>
+    </head>
+    
+    <body>
+        <nav id="navbar">
+            <ul class="pull-left">
+                <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li>
+                    <a href="/products.html"><i class="fa fa-search" aria-hidden="true"></i> Products</a>
+                </li>
+            </ul>
+            
+            <ul class="pull-right">
+                <li><a href="/account.html"><i class="fa fa-user" aria-hidden="true"></i> Account</a></li>
+                <li><a href="/favorites.html"><i class="fa fa-heart" aria-hidden="true"></i> Favorites</a></li>
+                <li><a href="/cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <nav class="side-navbar pull-left col-20">
+                <ul>
+                    <li><a href="#a-personal-info">Personal info</a></li>
+                    <li><a href="#a-orders">My orders</a></li>
+                    <li><a href="#a-vouchers">My vouchers</a></li>
+                    <li><a href="#a-reviews">My reviews</a></li>
+                </ul>
+            </nav>
+
+            <section id="personal-info">
+                <div id="a-personal-info" class="col-75 panel pull-right">
+                    <div class="panel-title">
+                        <h2>Personal info</h2>
+                    </div>
+                    <img alt="Alexandru Banu's picture" class="col-20 pull-left" src="images/user.png"/>
+                    <div class="col-80 pull-right">
+                        <p class="text-info"><span class="text-bold">Full name:</span> Banu Alexandru</p>
+                        <p class="text-info"><span class="text-bold">Ph. number:</span> 0123456789</p>
+                        <p class="text-info"><span class="text-bold">Address:</span> 329 Block D, 204 Splaiul Independentei, Bucharest</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="orders">
+                <div id="a-orders" class="col-75 panel pull-right">
+                    <div class="panel-title">
+                        <h2>My orders</h2>
+                    </div>
+
+                    <article class="order panel">
+                        <header class="heading">
+                            <h3><a href="#">Order no. 1234</a></h3>
+                            <small>Placed on: 7 September 2017, 12:28 | Total: 117.00 RON</small>
+                        </header>
+                        <hr>
+                        <div class="order-info">
+                            <p>Products delivered</p>
+                            <p>Subtotal: 117.00 RON</p>
+                        </div>
+                    </article>
+
+                    <article class="order panel">
+                        <header class="heading">
+                            <h3><a href="#">Order no. 5678</a></h3>
+                            <small>Placed on: 7 September 2017, 12:28 | Total: 117.00 RON</small>
+                        </header>
+                        <hr>
+                        <div class="order-info">
+                            <p>Products delivered</p>
+                            <p>Subtotal: 117.00 RON</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="vouchers">
+                <div id="a-vouchers" class="col-75 panel pull-right">
+                    <div class="panel-title">
+                        <h2>My vouchers</h2>
+                    </div>
+
+                    <article class="voucher panel">
+                        <header class="heading">
+                            <h3>Voucher recieved from Star Shop</h3>
+                            <small>expires at 31 Nov 2017</small>
+                        </header>
+                        <hr>
+                        <p>Price reduced by 10%</p>
+                    </article>
+
+                    <article class="voucher panel">
+                        <header class="heading">
+                            <h3>Voucher recieved from Star Shop</h3>
+                            <small>expires at 31 Nov 2017</small>
+                        </header>
+                        <hr>
+                        <p>Price reduced by 10%</p>
+                    </article>
+
+                    <article class="voucher panel">
+                        <header class="heading">
+                            <h3>Voucher recieved from Star Shop</h3>
+                            <small>expires at 31 Nov 2017</small>
+                        </header>
+                        <hr>
+                        <p>Price reduced by 10%</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="reviews">
+                <div id="a-reviews" class="col-75 panel pull-right">
+                    <div class="panel-title">
+                        <h2>My reviews</h2>
+                    </div>
+
+                    <article class="review panel">
+                        <img alt="Smartwatch" src="https://s1emagst.akamaized.net/products/5118/5117110/images/res_ecfe5086388bdc0f67eea61561f0eda8_80x80_7u4j.jpg"/>
+                        <header class="heading">
+                            <a href="#"><h4>A good price for a good product</h4></a>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </header>
+                        <p>Un smartwatch accesibil, dar asta vine cu dezavantaje calitative. Design-ul e plăcut, însă pe partea de software este cam dezamăgitor. Funcția de pedometru...</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+        
+        <footer id="footer">
+            <ul id="about-us">
+                <li>About us</li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            
+            <ul id="services">
+                <li>Services</li>
+                <li><a href="#">Check package</a></li>
+                <li><a href="#">Product service</a></li>
+                <li><a href="#">24/7 Support</a></li>
+            </ul>
+            
+            <ul id="support">
+                <li>Support</li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Repair form</a></li>
+                <li><a href="#">Retour form</a></li>
+                <li><a href="#">Issues report form</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

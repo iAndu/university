@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1483700593 source:d:\google drive\programare\asd\hashuri\main.cpp
+	<fstream>
+	<vector>
+

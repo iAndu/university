@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1488382480 source:d:\google drive\facultate\anul i\oop\bruce eckel\display line by line\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<cstring>
+

@@ -1,0 +1,5 @@
+I -> a | 
+J -> b | 
+S -> IX | YJ | a | 
+X -> IX | YJ | a | 
+Y -> JY | b | 

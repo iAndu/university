@@ -1,0 +1,11 @@
+nav {
+    position: fixed;
+    right: 5px;
+    top: 20px;
+    border: 1px solid black;
+    font-size: 12px;
+}
+
+#content {
+    width: 80%;
+}

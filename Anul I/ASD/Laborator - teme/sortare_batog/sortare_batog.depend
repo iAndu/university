@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1477074990 source:d:\programare\c\sortare_batog\main.cpp
+	<cstdio>
+	<algorithm>
+	<vector>
+	<cmath>
+	<climits>
+

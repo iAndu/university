@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1484747506 source:d:\google drive\programare\asd\test_asd\quicksort\main.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+

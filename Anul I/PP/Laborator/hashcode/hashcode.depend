@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1487884497 source:d:\google drive\programare\pp\hashcode\main.cpp
+	<fstream>
+	<vector>
+	<set>
+	<algorithm>
+

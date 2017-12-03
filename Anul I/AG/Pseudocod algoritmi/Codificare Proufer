@@ -1,0 +1,10 @@
+Codificare Prufer
+
+start
+	citeste T arbore
+	pentru i = 1, n - 2
+		fie elimi cel mai mic nod terminal
+		fie v vecinul lui elimi
+		T = T - elimi
+		ci = elimi
+stop

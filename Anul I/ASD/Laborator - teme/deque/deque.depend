@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1476524014 source:d:\programare\c\deque\main.cpp
+	<fstream>
+	<deque>
+	<vector>
+

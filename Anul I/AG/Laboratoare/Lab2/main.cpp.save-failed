@@ -1,0 +1,81 @@
+#include <fstream>
+#include <iostream>
+#include <set>
+#include <vector>
+using namespace std;
+
+vector<bool> viz;
+vector<int> min_level;
+vector<int> level;
+set<int> crit_nodes;
+vector< pair<int, int> > crit_edges;
+
+void build_tree(int node, int nr_nodes, vector<int> adj[], vector<int> &father) {
+    viz[node] = 1;
+        for (vector<int>::iterator it = adj[node].begin(); it != adj[node].end(); ++it) {
+            if (!viz[*it]) {
+                father[*it] = node;
+                level[*it] = level[node] + 1;
+                build_tree(*it, nr_nodes, adj, father);
+            }
+        }
+}
+
+void find_crits(int node, int nr_nodes, vector<int> adj[], vector<int> &father) {
+    viz[node] = 1;
+    min_level[node] = level[node];
+    cout << node << '\n';
+    for (vector<int>::iterator it = adj[node].begin(); it != adj[node].end(); ++it) {
+        if (!viz[*it]) {
+            find_crits(*it, nr_nodes, adj, father);
+            if (min_level[*it] >= level[node] && father[node]) {
+                crit_nodes.insert(node);
+            }
+            if (min_level[*it] > level[node]) {
+                crit_edges.push_back(make_pair(node, *it));
+            }
+        }
+        if (*it != father[node]) {
+            min_level[node] = min(min_level[node], min_level[*it]);
+        }
+    }
+}
+
+int main() {
+    int nr_nodes, nr_edges;
+
+    ifstream in("graf.in");
+    in >> nr_nodes >> nr_edges;
+    vector<int> adj[nr_nodes + 1];
+    vector<int> father(nr_nodes + 1);
+    viz.resize(nr_nodes + 1, 0);
+    min_level.resize(nr_nodes + 1, 0);
+    level.resize(nr_nodes + 1, 0);
+    for (int i = 0; i < nr_edges; ++i) {
+        int x, y;
+        in >> x >> y;
+        adj[x].push_back(y);
+        adj[y].push_back(x);
+    }
+    in.close();
+
+    build_tree(1, nr_nodes, adj, father);
+
+    for (int i = 1; i <= nr_nodes; ++i) {
+        viz[i] = 0;
+    }
+    find_crits(1, nr_nodes, adj, father);
+
+    ofstream out("graf.out");
+    out << "Legaturi critice:\n";
+    for (vector< pair<int, int> >::iterator it = crit_edges.begin(); it != crit_edges.end(); ++it) {
+        out << it->first << ' ' << it-> second << '\n';
+    }
+    out << "Noduri vulnerabile:\n";
+    for (set<int>::iterator it = crit_nodes.begin(); it != crit_nodes.end(); ++it) {
+        out << *it << '\n';
+    }
+    out.close();
+
+    return 0;
+}

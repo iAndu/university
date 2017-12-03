@@ -1,0 +1,13 @@
+Decodificare Proufer
+
+start
+	citeste (c1, ..., cl) - codificare Proufer
+	E(T) = O
+	V = {1, ..., n}
+	n = l + 2
+	pentru i = 1, n - 2
+		fie elimi = min(V - (ci, ci+1,..., cn))
+		V = V - elimi
+		E = E U (elimi, ci)
+	fie u, v cele doua noduri ramase in T
+	E = E U (u, v)

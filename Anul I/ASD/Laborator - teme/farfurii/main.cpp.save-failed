@@ -1,0 +1,39 @@
+#include <fstream>
+#include <cmath>
+using namespace std;
+
+int inversiuni(long long k) {
+    double p = (1 + sqrt(1 + 8 * k))/ 2;
+    if (p > (int)p) {
+        return (int)p + 1;
+    }
+    return (int)p;
+}
+
+int main() {
+    int n;
+    long long k;
+
+    ifstream in("farfurii.in");
+    in >> n >> k;
+    in.close();
+
+    int p = inversiuni(k);
+    int inv = (int)(p - 1) * ((float)p >> 1);
+    int c = inv - k;
+
+    ofstream out("farfurii.out");
+    for (int i = 1; i <= n - p; ++i) {
+        out << i << ' ';
+    }
+    out << n - c << ' ';
+    for (int i = n; i > n - p; --i) {
+        if (i != n - c) {
+            out << i << ' ';
+        }
+    }
+    out << '\n';
+    out.close();
+
+    return 0;
+}

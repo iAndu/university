@@ -1,0 +1,182 @@
+/* ex. 1 */
+
+table thead tr {
+    background-color: navy;
+    color: white;
+    font: "Arial Black", Gadget, sans-serif;
+}
+
+/* ex. 2 */
+
+table tfoot tr {
+    background-color: lime;
+    font-style: italic;
+    font: "Comic Sans MS";
+}
+
+/* ex. 3 */
+
+td, th {
+    border: 1px solid black;
+}
+
+table {
+    border: 4px outset blue;
+    border-collapse: collapse;
+}
+
+/* ex. 4 */
+
+/*
+tr td:first-child, tr th:first-child {
+    text-decoration: underline;
+}
+*/
+
+table td:first-child, table th:first-child {
+    text-decoration: underline;
+}
+
+/* ex. 5 */
+
+table caption {
+    text-decoration: line-through overline;
+    margin-top: 5px;
+}
+
+/* ex. 6 */
+
+tbody td:last-child img:hover {
+    cursor: crosshair;
+    outline: 2px pink dotted;
+}
+
+/* ex. 7 */
+
+ol {
+    list-style: armenian;
+    color: red;
+    font-style: italic;
+}
+
+ol li p {
+    color: blue;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ex. 8 */
+
+tbody td:nth-child(-n+3)::first-letter {
+    color: lightblue;
+}
+
+tbody td:nth-child(2)::first-letter {
+    color: pink;
+}
+
+/* ex. 9 */
+
+footer a:hover {
+    font-size: 20px;
+}
+
+footer a:active {
+    background-color: yellow;
+}
+
+/* ex. 10 */
+
+table~div:nth-child(-n+4) p:nth-child(n+4) {
+    letter-spacing: -3px;
+}
+
+
+
+
+
+
+/* ANIMATIE */
+
+
+
+div#head {
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: yellow;
+}
+
+div#head + div.alarm {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    visibility: hidden;
+}
+
+div.eye {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #000;
+    transition: all 2s;
+}
+
+div.eyebrow {
+    width: 60px;
+    height: 10px;
+    background-color: darksalmon;
+    margin-bottom: 10px;
+    position: relative;
+    transition: all 2s;
+}
+
+div#left-eye {
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    text-align: right;
+}
+
+div#left-eye * {
+    float: right;
+    clear: both;
+}
+
+div#right-eye {
+    position: absolute;
+    right: 40px;
+    top: 100px;
+}
+
+div#left-eye .eyebrow {
+    left: 10px;
+    transform: rotate(-45deg);
+}
+
+div#right-eye .eyebrow {
+    right: 10px;
+    transform: rotate(45deg);
+}
+
+div#head:hover div.eyebrow {
+    background-color: black;
+}
+
+div#head:hover div#left-eye .eyebrow {
+    transform: rotate(45deg);
+}
+
+div#head:hover div#right-eye .eyebrow {
+    transform: rotate(-45deg);
+}
+
+div#head:hover + div.alarm {
+    visibility: visible;
+}
+
+div.container {
+    text-align: center;
+}

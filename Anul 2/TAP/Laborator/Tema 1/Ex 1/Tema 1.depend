@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1507912737 source:f:\facultate\anul ii\tap\laborator\tema 1\main.cpp
+	<fstream>
+	<vector>
+	<algorithm>
+	<queue>
+

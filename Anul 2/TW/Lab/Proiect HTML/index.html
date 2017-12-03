@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Star Shop</title>
+        <link type="text/css" rel="stylesheet" href="main.css"/>
+        <link type="text/css" rel="stylesheet" href="font-awesome.min.css"/>
+        <meta charset="utf-8"/>
+        <meta name="description" content="An eCommerce website, come and buy anything from smartphones, laptops to food and cars."/>
+        <meta name="author" content="Alexandru Banu"/>
+        <meta name="keywords" content="shop, shopping, online, eCommerce, gadgets, phone, smartphone, laptop, electronics, car, TV"/>
+    </head>
+    
+    <body>
+        <nav id="navbar">
+            <ul class="pull-left">
+                <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="/products.html"><i class="fa fa-search" aria-hidden="true"></i> Products</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i> Electronics</a><li>
+                                <li><a href="#"><i class="fa fa-bed" aria-hidden="true"></i> Furniture</a></li>
+                                <li><a href="#"><i class="fa fa-car" aria-hidden="true"></i> Cars</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <ul class="pull-right">
+                <li><a href="/account.html"><i class="fa fa-user" aria-hidden="true"></i> Account</a></li>
+                <li><a href="/favorites.html"><i class="fa fa-heart" aria-hidden="true"></i> Favorites</a></li>
+                <li><a href="/cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <header class="heading text-center">
+                <h1><i class="fa fa-star" aria-hidden="true" style="color: rgb(249, 191, 59);"></i> Star Shop <i class="fa fa-star" aria-hidden="true" style="color: rgb(249, 191, 59);"></i></h1>
+                <p>Everything you need, just a few clicks away</p>
+            </header>
+            
+            <section id="presentation">                
+                <div class="panel">
+                    <div class="panel-title heading text-center">
+                        <h2>Who we are</h2>
+                    </div>
+                    <video controls autoplay>
+                        <source src="videos/present.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            
+            <section id="partner">
+                <div class="panel">
+                    <div class="panel-title heading text-center">
+                        <h2>Partner shops</h2>
+                    </div>
+                    <iframe src="https://www.emag.ro/homepage" name="myIframe"></iframe>
+<!--
+                    <ul id="iframe-links" class="text-center">
+                        <li><a href="https://www.emag.ro/" target="myIframe">Emag</a></li>
+                        <li><a href="https://www.lajumate.ro/" target="myIframe">Lajumate</a></li>
+                        <li><a href="https://www.olx.ro/" target="myIframe">OLX</a></li>
+                    </ul>
+-->
+                </div>
+            </section>
+            
+            <section id="gallery">
+                <div class="panel">
+                    <div class="panel-title heading text-center">
+                        <h2>Image gallery</h2>
+                    </div>
+                    
+                    <div class="image-gallery">
+                        <figure class="text-center">
+                            <img src="images/user.png" alt="Photo 1"/>
+                            <figcaption>Caption 1</figcaption>
+                        </figure>
+                        
+                        <figure class="text-center">
+                            <img src="images/user.png" alt="Photo 1"/>
+                            <figcaption>Caption 2</figcaption>
+                        </figure>
+                        
+                        <figure class="text-center">
+                            <img src="images/user.png" alt="Photo 1"/>
+                            <figcaption>Caption 3</figcaption>
+                        </figure>
+                        
+                        <figure class="text-center">
+                            <img src="images/user.png" alt="Photo 1"/>
+                            <figcaption>Caption 4</figcaption>
+                        </figure>
+                        
+                        <figure class="text-center">
+                            <img src="images/user.png" alt="Photo 1"/>
+                            <figcaption>Caption 5</figcaption>
+                        </figure>
+                        
+                        <figure class="col-20 text-center">
+                            <img src="images/user.png" alt="Photo 1"/>
+                            <figcaption>Caption 6</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            
+            <aside class="text-center">
+                <a href="http://www.facebook.com/"><i title="Facebook" style="color: #4267b2;" class="fa fa-4x fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="http://www.instagram.com/"><i title="Instagram" style="color: #e84c4d;" class="fa fa-4x fa-instagram" aria-hidden="true"></i></a>
+                <a href="http://www.twitter.com/"><i title="Twitter" style="color: cornflowerblue;" class="fa fa-4x fa-twitter-square" aria-hidden="true"></i></a>
+            </aside>
+            
+            <section id="newsletter">
+                <div class="panel">
+                    <div class="heading">
+                        <h3>Subscribe to our newsletter for latest offers!</h3>
+                        <small>You will recieve information such as latest offers, notifications for products with price reduced and best-selling items.</small>
+                    </div>
+                    
+                    <div id="subscribe">
+                        <input placeholder="Email">
+                        <button class="btn" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer id="footer">
+            <ul id="about-us">
+                <li>About us</li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+            
+            <ul id="services">
+                <li>Services</li>
+                <li><a href="#">Check package</a></li>
+                <li><a href="#">Product service</a></li>
+                <li><a href="#">24/7 Support</a></li>
+            </ul>
+            
+            <ul id="support">
+                <li>Support</li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Repair form</a></li>
+                <li><a href="#">Retour form</a></li>
+                <li><a href="#">Issues report form</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
