@@ -1,3 +1,8 @@
+/*
+    Relatie de recurenta - Cel mai lung subsir descrescator, tinand cont si de
+    culori
+*/
+
 #include <fstream>
 #include <vector>
 #include <algorithm>

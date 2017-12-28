@@ -1,3 +1,9 @@
+/*
+    Complexitate - la fiecare moment pun o piesa, dupa care impart problema
+    in patru sub-probleme identice, repetand procedeul pana la table de o
+    singura gaura => 2^n * 2^n operatii
+*/
+
 #include <fstream>
 #include <vector>
 #include <iostream>

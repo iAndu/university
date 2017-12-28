@@ -1,3 +1,8 @@
+/*
+    Complexitate - Se folosesc partitionari de quick sort pana in momentul
+    in care in stanga si in dreapta pivotului obtin valorile necesare.
+*/
+
 #include <fstream>
 #include <vector>
 #include <cstdlib>

@@ -1,3 +1,11 @@
+/*
+    Relatie de recurenta - Stim cu siguranta ca robotul nostru poate veni doar
+    dintr-o celula de mai jos sau de la stanga, astfel ca vom calcula profitul
+    parcurgand matricea de jos in sus si de la stanga la dreapta, calculand
+    profitul maxim pe care il putem obtine printr-un drum pana in coltul din
+    dreapta sus
+*/
+
 #include <fstream>
 #include <vector>
 

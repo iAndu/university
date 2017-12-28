@@ -1,3 +1,7 @@
+/*
+    Complexitate - citire in O(n), construirea arborelui O(n), verificare O(n)
+*/
+
 #include <fstream>
 #include <string>
 #include <unordered_map>

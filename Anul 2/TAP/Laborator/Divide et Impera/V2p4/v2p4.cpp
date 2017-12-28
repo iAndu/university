@@ -1,3 +1,9 @@
+/*
+    Complexitate - Se sorteaza punctele, dupa care se fac partitionari in timp
+    liniar, afland la fiecare partitionare cele mai apropiate doua puncte pentru
+    acea partitionare
+*/
+
 #include <fstream>
 #include <iostream>
 #include <vector>
@@ -8,6 +14,7 @@ using namespace std;
 
 vector< pair<int, int> > points;
 
+// Sortare dupa abscisa
 bool cmp(pair<int, int> a, pair<int, int> b) {
     if (a.first == b.first) {
         return a.second < b.second;
@@ -15,6 +22,7 @@ bool cmp(pair<int, int> a, pair<int, int> b) {
     return a.first < b.first;
 }
 
+// Sortare dupa ordonata
 bool cmp2(pair<int, int> a, pair<int, int> b) {
     if (a.second == b.second) {
         return a.first < b.first;
@@ -39,12 +47,15 @@ double partition(
                     minim = min(minim, distance(*it, *jt));
                 }
             }
+
+            sort(left, right + 1, cmp2);
             
             return minim;
         }
 
         int half = (right - left + 1) / 2;
         double minim = min(partition(left, left + half), partition(left + half, right));
+
         pair<int, int> halfPoint = *(left + half);
 
         vector< pair<int, int> > y;
