@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1476369310 source:d:\programare\c\editor_c++\main.cpp
+	<fstream>
+	<stack>
+	<string>
+	<vector>
+	<iostream>
+

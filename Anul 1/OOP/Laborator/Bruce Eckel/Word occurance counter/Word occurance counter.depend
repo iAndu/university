@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1488380928 source:d:\google drive\facultate\anul i\oop\bruce eckel\word occurance counter\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+

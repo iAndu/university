@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1488886877 source:d:\google drive\facultate\anul i\ag\lab1\main.cpp
-	<fstream>
-	<iostream>
-	<set>
-	<vector>
-

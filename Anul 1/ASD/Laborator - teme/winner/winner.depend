@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1484664909 source:d:\google drive\programare\asd\winner\main.cpp
+	<iostream>
+	<unordered_map>
+	<queue>
+	<cstring>
+	<unordered_set>
+

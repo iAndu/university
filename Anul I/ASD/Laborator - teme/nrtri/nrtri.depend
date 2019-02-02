@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1478007593 source:d:\programare\c\nrtri\main.cpp
-	<fstream>
-	<vector>
-	<algorithm>
-

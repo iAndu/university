@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1476794945 source:d:\programare\c\alibaba\main.cpp
+	<cstdio>
+	<stack>
+	<cstring>
+

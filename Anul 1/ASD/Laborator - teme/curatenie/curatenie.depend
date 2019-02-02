@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1483705181 source:d:\google drive\programare\asd\curatenie\main.cpp
+	<fstream>
+	<vector>
+	<utility>
+

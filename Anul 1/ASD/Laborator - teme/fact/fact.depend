@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1478726105 source:d:\programare\c\fact\main.cpp
+	<cstdio>
+	<climits>
+

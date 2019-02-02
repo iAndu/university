@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1484675396 source:d:\google drive\programare\asd\eqs\main.cpp
+	<iostream>
+	<unordered_map>
+	<fstream>
+	<cmath>
+

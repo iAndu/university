@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1477106318 source:d:\programare\c\arbint_batog\main.cpp
+	<cstdio>
+	<vector>
+	<cmath>
+	<algorithm>
+

@@ -1,0 +1,19 @@
+#include <iostream>
+#include "Student.h"
+using namespace std;
+
+Student create_object() {
+    Student obj("Calin", 6, 19);
+    return obj;
+}
+
+int main()
+{
+    Student Ion("Ion", 3, 20);
+    Student Calin = create_object();
+    Student Vasile;
+
+    Ion = Calin = Vasile;
+
+    return 0;
+}
